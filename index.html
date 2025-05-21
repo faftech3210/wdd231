@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frank 231</title>
+    <title>Course Home Page WDD231</title>
+    <meta name="author" content="Franklin Akor Faeren">
+    <meta name="discription" content="Dynamic Web Fundamentals Example-home page">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylez/index.css">
+    <script src="scriptz/index.js" defer></script>
 </head>
 <body>
-    <h1>hello Mr Frank how can i be of help</h1>
+    <header>
+        <div class="profile">
+            <img src="images/my profil.webp" width="150" height="150" alt="Franklin A. Faeren">
+            <span>Franklin A. Faeren</span>
+        </div>
+        <nav class="nav-bar">
+            <button id="menuBtn">&#9776;</button>
+            <ul class="menu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="https://faftech3210.github.io/wdd231/chamber/directory.html" target="_blank" rel="noopener noreferrer">Chamber</a></li>
+                <li><a href="final.html">Final</a></li>
+                <li><a href="https://github.com/faftech3210" target="_blank" rel="noopener noreferrer">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/henry-ogwor-bb8294221" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Home</h1>
+        
+        <section class="cards-container">
+            <!-- First Card (Courses) -->
+            <div class="card001">
+                <h2>Course Work</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <!-- Second Card (Franklin Akor) -->
+            <div class="card002">
+                <h2>Franklin Akor</h2>
+                <img src="images/jordan_river_temple_exterior_images.webp" width="400" height="400" alt="Temple profile-img" class="profile-img">
+                <figcaption>Utah Temple</figcaption>
+            </div>
+        </section>
+        <section class="card02">
+            <h2>Web Development & Programming Certificate Courses</h2>
+            <div class="button">
+                <button id="allCourses">All Courses</button>
+                <button id="wddCourses">WDD Courses</button>
+                <button id="cseCourses">CSE Courses</button>
+            </div>
+            <div id="courseContainer"></div>
+            <div id="totalCredits"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Franklin A. Faeren | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
