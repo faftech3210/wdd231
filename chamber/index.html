@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAF Chamber of Commerce</title>
+    <meta name="author" content="Franklin Akor Faeren">
+    <meta name="discription" content="Dynamic Web Fundamentals Example-home page">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/chamber-home.css">
+    <script defer src="scripts/chamber-home.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/favicon (1).png" alt="FAF Chamber of Commerce">
+            <h1>FAF Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active-page">Home</a></li>
+                <li><a href="#">Events Calendar</a></li>
+                <li><a href="#">Business Directory</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAF Business Journal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <picture>
+                <source srcset="image/chamber-home-hero-large.jpg" media="min-width: 650px">
+                <img src="images/hero-small.jpg" width="400" height="200" alt="chamber home image">
+            </picture>
+            <h1>Empowering Local Businesses</h1>
+            <p>Supporting growth, networking, and economic development in Timbuktu.</p>
+            <a href="#" class="cta">Join Us Today</a>
+        </section>
+
+        <!-- Events, Weather & Forecast Section -->
+        <section id="info-section">
+            <div id="events" class="grid-item">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li>🌍 Business Networking Event - June 15, 2025</li>
+                    <li>📈 Economic Growth Workshop - July 5, 2025</li>
+                    <li>🏆 Annual Business Awards - August 20, 2025</li>
+                    <li>💡 Small Business Forum - September 10, 2025</li>
+                </ul>
+            </div>
+
+            <div id="weather-current" class="grid-item">
+                <h2>Current Weather</h2>
+                <img src="images/cloudy-weather-svgrepo-com.svg" width="50" height="50" alt="Weather Icon">
+                <p>Temperature: <span id="temperature">Loading...</span>°C</p>
+                <p>Condition: <span id="weather-description">Loading...</span></p>
+            </div>
+
+            <div id="weather-forecast" class="grid-item">
+                <h2>Weather Forecast</h2>
+                <ul id="forecast">
+                    <li>Day 1: <span class="forecast-temp">--</span>°C - <span class="forecast-desc">Loading...</span></li>
+                    <li>Day 2: <span class="forecast-temp">--</span>°C - <span class="forecast-desc">Loading...</span></li>
+                    <li>Day 3: <span class="forecast-temp">--</span>°C - <span class="forecast-desc">Loading...</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Spotlight Section -->
+        <section id="spotlight">
+            <div id="spotlight-container" class="grid-view"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p id="lastModified"></p>
+        <p>&copy; 2025 Timbuktu Chamber of Commerce | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

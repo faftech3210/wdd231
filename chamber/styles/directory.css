@@ -7,12 +7,16 @@ body {
 
 /* Header */
 header {
-    background-color: #fff;
+    background-color: #0583d6;
     border-bottom: 1px solid #ccc;
     padding: 5px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+main{
+    margin: 15px;
 }
 
 .logo img {
@@ -28,24 +32,22 @@ header {
 
 nav ul li {
     list-style: none;
-}
-
-nav ul li {
     display: inline;
     padding: 15px 20px;
 }
 
 nav ul li a:hover {
-    color: red; /* Changes text color on hover */
+    color: #ff0000; /* Changes text color on hover */
     transition: color 0.3s ease; /* Adds smooth transition */
 }
 
 
 .active-page{
-    color: rgb(245, 140, 11);
+    color: #ff0000;
 }
 
 nav ul li a {
+    white-space: nowrap;
     text-decoration: none;
     color: #000;
 }
@@ -59,7 +61,20 @@ nav ul li a {
 
 .background-image img {
     width: 100%;
-    height: 300px;
+    height: 400px;
+}
+
+#spotlight h1 {
+	background-color: #333;
+	color: #ff0;
+	padding: 1rem;
+	text-align: center;
+}
+
+
+h3{
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .search-bar {
@@ -74,67 +89,121 @@ nav ul li a {
     font-size: 2rem;
 }
 
-.search-bar form {
-    display: flex;
-    margin-top: 100px;
+.menu {
+	margin: 1rem auto;
+	text-align: center;
 }
 
- #options,
- #text,
-.search-bar button {
+.menu button {
+    background-color: #ff0;
+	padding: 1rem;
+	font-weight: 700;
+}
+
+
+/* Spotlight Section - Flexbox */
+#spotlight-container {
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    /* align-items: 1 1 100%; */
+    padding: 5px;
+}
+
+.spotlight-card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    background: #3bb143;
+    text-align: center;
     padding: 15px;
-    border: none;
-    font-size: 1rem;
+    /* justify-content: ; */
+    
 }
 
-.search-bar input{
-    width: 600px;
-    border: none;
+/* Header Section */
+.card-header {
+    padding-bottom: 0;
 }
 
-.search-bar button,
-.search-bar input{
-    gap: 0;
+/* Border Line */
+hr {
+    border: 1px solid #ccc;
+    margin: 10px 0;
 }
 
-.search-bar button{
-    background-color: black;
-    color: #f4f4f4;
-}
-
-/* Categories */
-.categories {
-    padding: 20px;
-    text-align: center;
-}
-
-.categories ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-/* Advertisement Section */
-.advertisement {
-    padding: 20px;
-    text-align: center;
-}
-
-.ad-content {
+/* Footer Section */
+.card-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
 }
 
-.ad-text {
+.card-footer img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card-footer img, p {
+    margin: 5px;
+}
+
+.card-footer a {
+    color: #0583d6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.advertisement{
     text-align: center;
+    margin-top: 0;
+    margin-top: 16px;
 }
 
-.ad-text h4{
-    text-align: right;
+/* Grid View - Box layout */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    justify-content: center;
+    grid-auto-flow: row;
+    gap: 15px;
 }
+
+/* List View - Table format */
+.list-view {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.list-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.list-table th, .list-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.list-table th {
+    background: #0583d6;
+    color: white;
+}
+
+.list-table td a {
+    color: #0583d6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 
 /* Footer */
 footer {
@@ -142,16 +211,36 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 0;
-    margin-top: 100px;
+    margin-top: 15px;
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
+@media (max-width: 1200px){
+    nav {
+
         display: none;
+    }
+
+    #menu {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+        padding: .5rem ,75rem;
+        background-color: #0583d6;
+        color: #000;
+    }
+
+    #menu::before{
+        content: "☰";
+    }
+
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
     }
 
     nav ul.show {
@@ -160,10 +249,6 @@ footer {
 
     .search-bar {
         width: 90%;
-    }
-
-    .categories ul {
-        flex-wrap: wrap;
     }
 
     .ad-content {

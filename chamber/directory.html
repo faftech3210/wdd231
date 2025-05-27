@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAF Chamber of Commerce</title>
     <meta name="author" content="Franklin Akor Faeren">
-    <meta name="discription" content="Dynamic Web Fundamentals Example-home page">
+    <meta name="description" content="Dynamic Web Fundamentals Example-home page">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -17,11 +17,12 @@
             <img src="images/favicon (1).png" alt="FAF Chamber of Commerce">
             <h1>FAF Chamber of Commerce</h1>
         </div>
-        <nav>
+        <a id="menu" href="#"></a>
+        <nav class="nav-bar">
             <ul>
-                <li><a href="#" class="active-page">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#">Events Calendar</a></li>
-                <li><a href="#">Business Directory</a></li>
+                <li><a href="#" class="active">Directory</a></li>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">FAF Business Journal</a></li>
             </ul>
@@ -33,29 +34,17 @@
             <div class="background-image">
                 <img src="images/chamber-networking-feature.webp" height="200" alt="Board Members">
             </div>
-            <div class="search-bar">
-                <h2>FAF Chamber Member Directory</h2>
-                <form>
-                    <label for="options"></label>
-                    <select id="options" name="options">
-                        <option>All</option>
-                    </select>
-                    <label for="text"></label>
-                    <input type="text" id="text" name="text" placeholder="Seach by Keyword">
-                    <button type="submit">Search</button>
-                </form>
-            </div>
         </section>
         
-        <section class="categories">
-            <h3>Popular Categories:</h3>
-            <ul>
-                <li><a href="#">Restaurants</a></li>
-                <li><a href="#">Nonprofit Organizations</a></li>
-                <li><a href="#">Hotels & Motels</a></li>
-                <li><a href="#">Real Estate</a></li>
-                <li><a href="#">Accommodations</a></li>
-            </ul>
+         <!-- Spotlight Section -->
+        <section id="spotlight">
+            <h1>User Layout View Selection</h1>
+	        <div class="menu">
+		        <button id="grid">⏹️ Grid</button>
+		        <button id="list">📄 List</button>
+	        </div>
+            <h3>MEMBERS CARDS</h3>
+            <div id="spotlight-container"></div>
         </section>
         
         <section class="advertisement">

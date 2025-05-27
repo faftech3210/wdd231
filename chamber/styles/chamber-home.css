@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #0583d6;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    margin-left: 100px;
+    margin-top: 1rem;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 15px;
+}
+
+nav ul li a:hover {
+    color: #ff0000; /* Changes text color on hover */
+    transition: color 0.3s ease; /* Adds smooth transition */
+}
+
+
+.active-page{
+    color: #ff0000;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+}
+
+/* li a {
+    min-width: 100px;
+} */
+/* Grid Layout for Events & Weather */
+#info-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.grid-item h2 {
+    background-color: #ff0;
+    padding: 15px;
+    margin: 0;
+}
+
+/* Search Section */
+#hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+#hero h1{
+    color: #cf0707;
+    font-weight: bold;
+}
+
+#hero p {
+    color: #000;
+    font-weight: bold;
+}
+
+#hero img {
+    width: 100%;
+    height: 500px;
+}
+
+
+
+.grid-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Define grid placement */
+#events {
+    grid-column: span 2; /* Events span two columns */
+}
+ 
+#weather-current, #weather-forecast {
+    grid-column: span 1; /* Each takes 1 column */
+}
+
+/* Styled Upcoming Events */
+#events ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#events li {
+    color: #ff0000;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Spotlight Section - Flexbox */
+#spotlight-container {
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: 1 1 100%; */
+    padding: 5px;
+}
+
+.spotlight-card {
+    width: 500px;
+    height: 300px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    background: #3bb143;
+    text-align: center;
+    padding: 15px;
+    justify-content: center;
+    
+}
+
+/* Header Section */
+.card-header {
+    padding-bottom: 10px;
+}
+
+/* Border Line */
+hr {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+/* Footer Section */
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-footer img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card-footer a {
+    color: #0583d6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Footer */
+footer {
+    position: static;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0;
+    margin-top: 16px;
+}
+
+footer p a{
+    color: #ff0000;
+    
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust grid layout for small screens */
+    #info-section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Ensure items stack vertically */
+    .grid-item {
+        width: 100%;
+    }
+
+    /* Adjust spotlight layout for vertical stacking */
+    #spotlight-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .spotlight-card {
+        width: 90%;
+    }
+
+    /* Adjust navigation for mobile */
+    nav ul {
+        display: none;
+    }
+}
+
+

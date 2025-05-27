@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Dangote Group",
+        "logo": "images/1989605.png",
+        "phone": "+234-803-700-0000",
+        "address": "Union Marble House, 1 Alfred Rewane Road, Ikoyi, Lagos",
+        "website": "https://www.dangote.com/",
+        "level": "Gold"
+    },
+    {
+        "name": "Zenith Bank Plc",
+        "logo": "images/zenith-bank-logo-clipart-8.png",
+        "phone": "+234-700-600-1110",
+        "address": "Plot 84, Ajose Adeogun Street, Victoria Island, Lagos",
+        "website": "https://www.zenithbank.com/",
+        "level": "Silver"
+    },
+    {
+        "name": "Guaranty Trust Bank",
+        "logo": "images/GTB500X500.png",
+        "phone": "+234-700-482-2665",
+        "address": "Plot 635, Akin Adesola Street, Victoria Island, Lagos",
+        "website": "https://www.gtbank.com/",
+        "level": "Gold"
+    },
+    {
+        "name": "MTN Nigeria",
+        "logo": "images/MTN-logo.webp",
+        "phone": "+234-803-100-0180",
+        "address": "Golden Plaza, Falomo, Ikoyi, Lagos",
+        "website": "https://www.mtn.ng/",
+        "level": "Gold"
+    },
+    {
+        "name": "Flutterwave",
+        "logo": "images/Flutterwave-New-Logo-700x394.png",
+        "phone": "+234-1-888-8888",
+        "address": "8 Providence Street, Lekki Phase 1, Lagos",
+        "website": "https://flutterwave.com/ng/",
+        "level": "Gold"
+    }    
+]
