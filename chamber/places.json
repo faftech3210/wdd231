@@ -1,0 +1,85 @@
+[
+    {
+        "name": "Lekki Conservation Centre",
+        "address": "KM 19, Lekki-Epe Expressway, Lagos",
+        "image": "images/LCC-min.jpg",
+        "description": "A serene nature reserve featuring Africa’s longest canopy walkway and diverse wildlife.",
+        "cost": "₦3,000 per person"
+    },
+    {
+        "name": "Nike Art Gallery",
+        "address": "No. 2, Elegushi Road, Lekki, Lagos",
+        "image": "images/Nikeart-min.jpg",
+        "description": "A four-story gallery housing stunning Nigerian artworks and cultural exhibits.",
+        "cost": "Free Entry"
+    },
+    {
+        "name": "Tarkwa Bay Beach",
+        "address": "Tarkwa Bay, Lagos",
+        "image": "images/Tarkwa Bay Beach-min.jpg",
+        "description": "A beautiful island beach perfect for relaxation and water sports.",
+        "cost": "Boat ride costs ₦1,500 - ₦3,000 per person"
+    },
+    {
+        "name": "National Museum Lagos",
+        "address": "Onikan, Lagos",
+        "image": "images/National Museum Lagosjpg-min.jpg",
+        "description": "An extensive collection of Nigerian artifacts and historical exhibits.",
+        "cost": "₦200 - ₦1,000 per person"
+    },
+    {
+        "name": "Eko Atlantic City",
+        "address": "Victoria Island, Lagos",
+        "image": "images/Eko Atlantic City-min.jpg",
+        "description": "A futuristic city built on reclaimed land, home to modern infrastructure and businesses.",
+        "cost": "Free Entry (Private Areas May Require Booking)"
+    },
+    {
+        "name": "Freedom Park",
+        "address": "Broad Street, Lagos Island",
+        "image": "images/Freedom Park-min.jpg",
+        "description": "A historic park offering cultural performances and a peaceful escape in the city.",
+        "cost": "₦500 - ₦1,000 per person"
+    },
+    {
+        "name": "Balogun Market",
+        "address": "Lagos Island, Lagos",
+        "image": "images/Balogun Market-min.jpg",
+        "description": "One of Nigeria’s largest markets, known for textiles, fashion, and commerce.",
+        "cost": "Free Entry (Personal Shopping Budget Required)"
+    },
+    {
+        "name": "Landmark Beach",
+        "address": "Landmark Centre, Oniru, Lagos",
+        "image": "images/landmark-min.jpg",
+        "description": "A luxurious beach experience with fun outdoor activities, restaurants, and lounges.",
+        "cost": "₦3,000 - ₦5,000 per person"
+    },
+    {
+        "name": "Omu Resort",
+        "address": "Bogije Town, Ibeju-Lekki, Lagos",
+        "image": "images/Omu Resort-min.jpg",
+        "description": "A family-friendly resort with a zoo, amusement park, and go-kart racing.",
+        "cost": "₦3,000 - ₦5,000 per person"
+    },
+    {
+        "name": "La Campagne Tropicana Beach Resort",
+        "address": "Ikegun, Ibeju-Lekki, Lagos",
+        "image": "images/La Campagne Tropicana Beach Resort-min.jpg",
+        "description": "An exclusive beach resort offering luxurious accommodations and adventure experiences.",
+        "cost": "₦10,000 - ₦25,000 per person (Packages Available)"
+    },
+    {
+        "name": "Jara Beach Resort",
+        "address": "Eleko Beach, Lagos",
+        "image": "images/Beach Resort-min.jpg",
+        "description": "A private, luxury beach resort offering a relaxing getaway with fine dining and ocean views.",
+        "cost": "₦15,000 - ₦40,000 per person (Packages Available)"
+    },
+    {
+        "name": "Third Mainland Bridge",
+        "address": "Lagos Mainland",
+        "image": "images/TMLB-min.jpg",
+        "description": "Africa’s second-longest bridge, connecting Lagos Island with the Mainland."
+    }
+]
