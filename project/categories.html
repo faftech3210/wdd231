@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Book Categories | Book Haven</title>
+    <meta name="author" content="Franklin Akor Faeren">
+    <meta name="discription" content="Dynamic Web Fundamentals Example-home page">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/categories.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>////BH</h1>
+            <button id="myButton">&#9776</button>
+            <button id="closeButton">✖</button>
+            <ul class="menulinks">
+                <li><a href="#">Home</a></li>
+                <li><a class="active-page" href="#">Categories</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Dive into Genres You Love</h1>
+        <p>From gripping fiction to insightful nonfiction—there's something for every reader.</p>
+    </section>
+
+    <section>
+        <h2>Browse by Genre</h2>
+        <div class="genre-list">
+        <div class="genre">
+            <img src="images/fct2.webp" alt="Fiction">
+            <h3>Fiction</h3>
+        </div>
+        <div class="genre">
+            <img src="images/nf4.webp" alt="Non-Fiction">
+            <h3>Non-Fiction</h3>
+        </div>
+        <div class="genre">
+            <img src="images/f9.webp" alt="Fantasy">
+            <h3>Fantasy</h3>
+        </div>
+        <div class="genre">
+            <img src="images/sf2.webp" alt="Sci-Fi">
+            <h3>Sci-Fi</h3>
+        </div>
+        <div class="genre">
+            <img src="images/m8.webp" alt="Mystery">
+            <h3>Mystery</h3>
+        </div>
+        </div>
+    </section>
+    <section>
+        <h2>Explore Reviews by Genre</h2>
+        <select id="genreFilter">
+            <option value="All">All Genres</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Non-Fiction">Non-Fiction</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Mystery">Mystery</option>
+        </select>
+        <div id="bookContainer" class="genre-review-grid"></div>
+    </section>
+
+    <section class="Picks">
+        <h2>Top Community Picks</h2>
+        <ul style="list-style: none; padding: 0;">
+        <li><strong>Fiction:</strong> The Night Circus by Erin Morgenstern</li>
+        <li><strong>Non-Fiction:</strong> Sapiens by Yuval Noah Harari</li>
+        <li><strong>Fantasy:</strong> The Name of the Wind by Patrick Rothfuss</li>
+        <li><strong>Sci-Fi:</strong> Dune by Frank Herbert</li>
+        <li><strong>Mystery:</strong> The Girl with the Dragon Tattoo by Stieg Larsson</li>
+        </ul>
+    </section>
+    <footer>
+        <a href="#">Privacy Policy</a>
+        <a href="#">About us</a>
+        <p id="p1">&copy;🌸 Franklin Akor Faeren 🌸 Nigeria</p>
+        <p id="lastModified"></p>
+        <div class="social-icons">
+            <span><img src="images/facebook.svg" alt="facebook"></span>
+            <span><img src="images/twitter.svg" alt="twitter"></span>
+            <span><img src="images/instagram.svg" alt="instagram"></span>
+            <span><img src="images/linkedin.svg" alt="linkedin"></span>
+        </div>
+    </footer>
+    <script src="scripts/categories.js"></script>
+</body>
+</html>

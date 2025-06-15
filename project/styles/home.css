@@ -1,0 +1,255 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #F4EBD9;
+}
+
+/* Header */
+header {
+    background: #3A5BA0;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav button {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: red;           
+  transform: scale(1.1);    /* Slight zoom effect */
+  text-decoration: underline;
+}
+
+nav h1{
+    font-size: 3rem;
+    margin-top: 10px;
+    margin-left: 10%;
+    background-color: #ff9800;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+nav ul li a.active-page {
+    background: #ff9800;
+}
+
+/* Genre Grid Layout */
+.genre-list {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.genre-list img {
+    width: 400px;
+    height: 200px;
+}
+
+/* Row layout for medium and larger screens */
+@media (min-width: 769px) {
+    .genre-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        align-items: stretch;
+    }
+}
+
+/* Column layout for small screens */
+@media (max-width: 768px) {
+    .genre-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Hide the buttons on large screens */
+@media (min-width: 768px) {
+    #myButton, #closeButton {
+        display: none;
+    }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+        .menulinks {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background: #3A5BA0;
+        padding: 1rem;
+        position: absolute;
+        width: 100%;
+        top: 115px;
+        left: 0;
+        z-index: 100;
+    }
+
+    .menulinks.show {
+        display: flex;
+    }
+
+    #closeButton {
+        display: none; /* Initially hidden */
+        background: none;
+        border: none;
+        /* font-size: 2.5rem; */
+        margin-bottom: 10px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .menulinks.show #closeButton {
+        display: block;
+    }
+
+
+
+    nav button {
+        display: block;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+}
+
+/* Hero Section with Background Image */
+.hero {
+    background-image: url('../images/hero.webp'); /* Replace with actual image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    height: 300px;
+}
+
+/* Overlay for Better Readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+.genre h3 {
+    color:#0056b3;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Hero Text Styling */
+.hero h1, .hero p, .cta {
+    position: relative;
+    z-index: 1;
+}
+
+/* CTA Button */
+.cta {
+    background-color: #0056b3;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.cta:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #343a40;
+}
+
+footer a, #p1, #lastModified {
+    color: #f8f9fa;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #007bff; /* Change text color on hover */
+    transform: scale(1.1); /* Slightly enlarge for an interactive feel */
+}
+
+
+.social-icons :hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+
