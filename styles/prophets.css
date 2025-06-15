@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #bfc1bf;
+    color: black;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background-color: #069feb;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 30px #777;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #bfc1bf;
+    color: black;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
